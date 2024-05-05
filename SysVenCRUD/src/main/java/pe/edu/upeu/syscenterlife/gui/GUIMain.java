@@ -15,7 +15,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  *
  * @author LENOVO
- */
+ */ 
 public class GUIMain extends JFrame {
 
     JTabbedPane jtpane;
@@ -26,8 +26,7 @@ public class GUIMain extends JFrame {
         this.setTitle("SystemMain@DMP");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setSize(new Dimension(screenSize.width, (screenSize.height)
-                - 36));
+        this.setSize(new Dimension(screenSize.width, (screenSize.height)- 36));
         MainCliente mc = new MainCliente();
         //mc.setContexto(ctx);
         mc.setPreferredSize(new Dimension(1024, 600));

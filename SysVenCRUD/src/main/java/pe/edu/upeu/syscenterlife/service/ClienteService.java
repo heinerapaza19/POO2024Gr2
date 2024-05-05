@@ -6,30 +6,43 @@ package pe.edu.upeu.syscenterlife.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upeu.syscenterlife.dao.ClienteDao;
 import pe.edu.upeu.syscenterlife.modelo.Cliente;
 
 @Service
 public class ClienteService {
 
+   ClienteDao clienteDao = new ClienteDao();
+
     List<Cliente> listaCli = new ArrayList<>();
 
-    public boolean saveEntidad(Cliente categoria) {
-        return this.listaCli.add(categoria);
+    public ClienteService() {
+        Cliente c = new Cliente();
+        c.setDniruc("43621514");
+        c.setNombres("Ruben Apaza");
+        c.setDocumento("Natural");
+        listaCli.add(c);
     }
 
-    public List<Cliente> listarEntidad() {
-        return listaCli;
+    public boolean saveEntidad(Cliente cliente) {//create
+        return this.listaCli.add(cliente);
     }
 
-    public Cliente buscarCliente(String dnirucx) {
+    public List<Cliente> listarEntidad() {//report
+        
+        return clienteDao.listarCliente();
+    }
+
+    public Cliente buscarCliente(String dnirucx) {//buscar
         return listaCli.stream()
                 .filter(cliente -> cliente.getDniruc().equals(dnirucx))
                 .findFirst()
-                .orElse(null); // Devuelve null si no se encuentra ningún  cliente
+                .orElse(null); // Devuelve null si no se encuentra ningún cliente
     }
 
-    public Cliente updateEntidad(Cliente clientex) {
+    public Cliente updateEntidad(Cliente clientex) {//Update
         listaCli.stream()
                 .filter(cliente
                         -> cliente.getDniruc().equals(clientex.getDniruc())) // Filtrar por DNI
@@ -39,9 +52,9 @@ public class ClienteService {
         //return this.listaCli.set(index, cliente);
         return buscarCliente(clientex.getDniruc());
     }
-    
-    public void deleteRegistEntdad(String dato) {
-        this.listaCli.remove(listaCli.stream()
+
+    public void deleteRegistEntdad(String dato) {//Delete
+        listaCli.remove(listaCli.stream()
                 .filter(cliente -> cliente.getDniruc().equals(dato))
                 .findFirst().orElse(null));
     }
