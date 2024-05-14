@@ -63,6 +63,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -73,6 +74,10 @@
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+=======
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="218" max="-2" attributes="0"/>
+>>>>>>> 80f5904d48c193e293968cb14f51533d4510f81a
                   <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -88,7 +93,11 @@
                           <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace max="32767" attributes="0"/>
+=======
+                  <EmptySpace pref="45" max="32767" attributes="0"/>
+>>>>>>> 80f5904d48c193e293968cb14f51533d4510f81a
               </Group>
           </Group>
         </DimensionLayout>
@@ -99,8 +108,11 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="53" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+=======
+>>>>>>> 80f5904d48c193e293968cb14f51533d4510f81a
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
@@ -116,7 +128,11 @@
                           </Group>
                       </Group>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace pref="24" max="32767" attributes="0"/>
+=======
+                  <EmptySpace pref="32" max="32767" attributes="0"/>
+>>>>>>> 80f5904d48c193e293968cb14f51533d4510f81a
               </Group>
           </Group>
         </DimensionLayout>
@@ -172,6 +188,7 @@
             <Property name="text" type="java.lang.String" value="PDF"/>
           </Properties>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -183,6 +200,8 @@
             <Property name="text" type="java.lang.String" value="HEINER APAZA APAZA"/>
           </Properties>
         </Component>
+=======
+>>>>>>> 80f5904d48c193e293968cb14f51533d4510f81a
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel2">
